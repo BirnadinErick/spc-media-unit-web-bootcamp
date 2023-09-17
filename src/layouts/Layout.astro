@@ -18,8 +18,8 @@ const { title, desc, ogimage = "/opengraph.jpg" } = Astro.props;
 const resolvedOGImage = checkImageUrl(ogimage, Astro.site);
 
 const makeTitle = title
-  ? title + " | " + "Stablo"
-  : "Stablo — Free Blog Website Template built with Astro & MDX";
+  ? title + " | " + "Birnadin Erick"
+  : "Enigma Bits by Birnadin Erick";
 ---
 
 <!DOCTYPE html>
@@ -31,23 +31,22 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={makeTitle}
-      description={desc ||
-        "Stablo is a Blog Starter Template built with Astro & MDX."}
+      description="A Bootcamp by Birnadin Erick(me$birn.cc) to introduce disciples in simple frontend-heavy webapps to pupil who are familiar with Scratch programming methodologies."
       canonical={canonicalURL}
       twitter={{
-        creator: "@surjithctly",
-        site: "@web3templates",
+        creator: "@BirnadinErick",
+        site: "@birnadine",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Stablo - Blog Starter Template for Astro`,
+          title: "Enigma Bits | Birnadin Erick",
           image: resolvedOGImage,
         },
         image: {
-          alt: "Stablo Screenshot",
+          alt: "Enigma Bits by Birnadin Erick",
         },
       }}
     />
@@ -57,8 +56,6 @@ const makeTitle = title
     <slot />
     <Footer />
     <style is:global>
-      /* Improve Page speed */
-      /* https://css-tricks.com/almanac/properties/c/content-visibility/ */
       img {
         content-visibility: auto;
       }
