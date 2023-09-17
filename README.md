@@ -8,5 +8,6 @@ are resereved by Birnadin Erick <me@birn.cc>
 
 ---
 
-### Made in Jaffna!
+Timestamp generation: `date -u +"%FT%T.%3NZ"^C`
 
+## Made in Jaffna! with palmyrah

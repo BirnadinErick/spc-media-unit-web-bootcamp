@@ -22,11 +22,11 @@ export const categories: Props[] = [
       "Explore the latest trends and ideas in fashion, food, home design, and more, and get inspiration for living your best life.",
   },
   {
-    title: "Personal",
-    slug: "personal",
+    title: "Common",
+    slug: "common",
     color: "green",
     description:
-      "Discover tips and strategies for self-improvement, personal development, and achieving your goals, and find resources to help you grow as a person.",
+      "Writeups that reveals common disciples to the reader",
   },
   {
     title: "Travel",
