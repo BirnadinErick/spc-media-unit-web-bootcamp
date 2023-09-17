@@ -15,11 +15,11 @@ export const categories: Props[] = [
       "Keep up with the latest tech trends and learn about the latest innovations in software development, hardware design, cybersecurity, and more.",
   },
   {
-    title: "Lifestyle",
-    slug: "lifestyle",
+    title: "Javascript",
+    slug: "js",
     color: "orange",
     description:
-      "Explore the latest trends and ideas in fashion, food, home design, and more, and get inspiration for living your best life.",
+      "Gateway to the vast world of Javascript.",
   },
   {
     title: "Common",

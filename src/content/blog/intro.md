@@ -1,7 +1,6 @@
 ---
 title: "Introduction to the Bootcamp"
-excerpt: "A temperary guide to learn bare-basics of web development
-where I will teach you the mechanics involved when a frontend-heavy content-based web application development."
+excerpt: "A temperary guide to learn bare-basics of web development where I will teach you the mechanics involved when a frontend-heavy content-based web application development."
 publishDate: "2023-09-16T14:15:30.000Z"
 image: "https://unsplash.com/photos/SymZoeE8quA/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjk0OTU3NjAxfA&force=true&w=1920"
 category: "common"
