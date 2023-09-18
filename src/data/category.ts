@@ -29,17 +29,17 @@ export const categories: Props[] = [
       "Writeups that reveals common disciples to the reader",
   },
   {
-    title: "Travel",
-    slug: "travel",
+    title: "PHP",
+    slug: "php",
     color: "pink",
     description:
-      "Plan your next adventure and get travel tips and inspiration from experienced travelers, with articles covering destinations, cultures, and more.",
+      "Some spotlighht on themost infamous server-side language for low-volume traffic.",
   },
   {
     title: "Design",
     slug: "design",
     color: "purple",
     description:
-      "Get insights and inspiration from the world of design, with articles covering graphic design, product design, interior design, and more.",
+      "Get to know how the SPC-175 and relatives are designed at a system level",
   },
 ];
