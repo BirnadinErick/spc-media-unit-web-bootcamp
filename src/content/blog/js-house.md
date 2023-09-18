@@ -294,4 +294,13 @@ the final artefact and assign it to the `myMod` at runtime.
 
 ---
 
-## The attic
+## Wrap up
+
+We are not done yet. But contiguous theory will bore you to death; rest will
+be continued later on. For now, let's just make a
+[dead-simple scientific calculator](/blog/sci-calc-1)
+with what we have learned so far.
+
+Have a great time tinkering!
+
+BirnadinE.
