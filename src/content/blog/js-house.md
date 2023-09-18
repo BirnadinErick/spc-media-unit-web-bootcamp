@@ -114,12 +114,11 @@ for (i=0; i<N; i++;) {
 
 Primally we have:
 
-- numbers
-- characters
-- strings
-- floats
+- numbers: `2003` or `19.05`
+- characters: `'b'`
+- strings: `"Birnadin"`
 
-For detailed and better explanation please go though
+For detailed and better explanation please go through
 [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#data_structures_and_types).
 
 ---
@@ -172,6 +171,10 @@ let i = e[0] // == "b"
 let j = b[2] // == 19
 ```
 
+> Here the `let` keyword is how we declare (might initiate) a variable.
+> Other construct is `const` which makes a variable to have constant value
+> at runtime.
+
 ### Keyed Collections
 
 Using hash functions, a value can be keyed using predefined keys at the creation
@@ -206,5 +209,89 @@ for (const [key, value] of sayings) {
 Now with the knowledge we assimilated, let's move forward and talk about...
 
 - I/O
-- File handling
-- The DOM
+- Modules
+
+There are 2 other things I would like to add here, but for them we need to study
+about Promises and `async/await`. So, let's put them in the attic and come back
+to them later!
+
+### Input and Output (IO)
+
+You might be familiar with the [Von Neuman Architecture](https://en.wikipedia.org/wiki/Von_Neumann_architecture)
+that lays the groundwork for all the softwares ever witten (probably).
+
+![The Von Neumann Arch *graphic from Wikipedia*](/img/vonneumann.svg)
+
+Now our focus is in *Input* and *Output* devices. Well know way of output to
+stdout is by `console.log` in JS. This function is found both in browser
+environment and nodejs. Try it for yourself.
+
+Write the program
+
+```js
+console.log("Hello Birnadin!"); // feel free to change the prompt!
+```
+
+Now execute the script with nodejs and see for yourself that an output is
+given in the stdout (mostly your terminal window). This is analogous to following
+Scratch script.
+
+![Scratch Output]()
+
+OK, but how do we take an input to the program, if the environment is nodejs?
+What would be same as following Scratch block
+
+![Scratch Input]()
+
+To keep things nice and tidy, let's qorry about commandline arguments. We will
+cover the stdin when we are done with **async/await**. Commandline arguments are
+just the strings you passed into terminal when invoking a command. In nodejs,
+we can access this vector using `process.argv` object. So when executing a
+script like this...
+
+```bash
+node io.js erick spcmediaunit webbootcamp
+```
+
+In runtime, the `process.argv` would be...
+
+```js
+process.argv === [
+    "node.exe",
+    "io.js",
+    "erick",
+    "spcmediaunit",
+    "webbootcamp"
+] // True
+
+process.argv[2] === "erick" //True
+```
+
+> `process.argv` is **read-only**, you can't assign values at runtime.
+
+First and second values in the array are interpreter and the script itself.
+This is because the argv is originally given to node.exe by the OS and propogated
+downstream. So be careful to remind this under your consideration.
+
+### Modules
+
+As our project grows, single-file script will be tedious and hard to maintain
+by small-scale team. To countermeasure these, we have
+[`modules`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
+Modules in the sense, we can divide a single-file script into multiple files,
+and import code blocks as per need in one another.
+
+In a nodejs environment, we use `require` keyword...
+
+```js
+const myMod = require(/* relative path to the module */)
+```
+
+Essentially what this does, is take the script and execute it then only to return
+the final artefact and assign it to the `myMod` at runtime.
+
+> We will use another flavor of such import in future!
+
+---
+
+## The attic
