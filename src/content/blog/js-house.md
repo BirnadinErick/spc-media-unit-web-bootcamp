@@ -21,7 +21,7 @@ Let's get detour, thenafter build the house, OK?
 ## Runtimes (Engines): a ground to build upon
 
 Just like how we need a land to build upon, we need some land to run JS. Since
-JS is an *interpreted language* we need an interpreter, a runtime to be exact; 
+JS is an *interpreted language* we need an interpreter, a runtime to be exact;
 unlike compiled languges. Some of such runtimes are:
 
 - [nodejs](https://nodejs.org/en)
@@ -52,9 +52,9 @@ Nevertheless, you can follow along with your editor of choice.
 
 We will further enhance the VSC to IDE from text-editor.
 
----
-
 Now that we have the prerequisites, let's drill down to business.
+
+---
 
 ## Laying the Foundations
 
@@ -75,13 +75,13 @@ The control Structures are as such:
 This does not have any particulars. All you need to know is that the interpreter
 reads top->bottom & right->left.
 
-![Interpreter Reading Flow]()
+![Interpreter Reading Flow](/img/interpreter-flow.svg)
 
 ### Conditional
 
 This structure will introduce branches in our program.
 
-![Conditions of Scratch vs. JS]()
+![Conditions of Scratch vs. JS](/img/vs-cond.webp)
 
 ### Iteration
 
@@ -92,7 +92,7 @@ primal are:
 1. [`while`](https://www.w3schools.com/js/js_loop_while.asp)
 2. [`for`](https://www.w3schools.com/js/js_loop_for.asp)
 
-![Iterations Scratch vs. JS]()
+![Iterations Scratch vs. JS](/img/vs-loop.webp)
 
 #### while loop
 
@@ -130,7 +130,7 @@ kinds of [programing paradigm](https://www.geeksforgeeks.org/introduction-of-pro
 Just of our foundations will belong to procedural. But, personally I love
 functional programming with a zest of procedural.
 
-![functional programming meme]()
+![functional programming meme](/img/func-meme.webp)
 
 ### Functions
 
@@ -229,19 +229,17 @@ environment and nodejs. Try it for yourself.
 Write the program
 
 ```js
-console.log("Hello Birnadin!"); // feel free to change the prompt!
+console.log("Hello!"); // feel free to change the prompt!
+console.log("Goodbye!"); // feel free to change the prompt!
 ```
 
 Now execute the script with nodejs and see for yourself that an output is
-given in the stdout (mostly your terminal window). This is analogous to following
-Scratch script.
+given in the stdout (mostly your terminal window). This is (somewhat)analogous
+to following Scratch script.
 
-![Scratch Output]()
+![Scratch Output](/img/s-say.png)
 
 OK, but how do we take an input to the program, if the environment is nodejs?
-What would be same as following Scratch block
-
-![Scratch Input]()
 
 To keep things nice and tidy, let's qorry about commandline arguments. We will
 cover the stdin when we are done with **async/await**. Commandline arguments are
