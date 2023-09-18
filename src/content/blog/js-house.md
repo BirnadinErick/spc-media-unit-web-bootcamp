@@ -16,7 +16,7 @@ Those are
 - construction crew => this is YOU!
 - tools
 
-Let's get detour, thenafter build the house, OK?
+Let's detour for now, thenafter build the house, OK?
 
 ## Runtimes (Engines): a ground to build upon
 
@@ -40,7 +40,7 @@ development; and **V8** for prodiction and render.
 
 ### Installing nodejs
 
-Since most of you are windows users, you can download nodejs from official
+Since most of you are Windows users, you can download nodejs from official
 website and use the installer to install. This bootcamp will use version `18`.
 
 ## IDE: tools we need
@@ -50,7 +50,7 @@ Since y'all are beginners, let's go with something well integrated into Windows,
 the [Visual Studio Code(VSC)](https://code.visualstudio.com/download).
 Nevertheless, you can follow along with your editor of choice.
 
-We will further enhance the VSC to IDE from text-editor.
+We will further enhance the VSC to IDE from text-editor later.
 
 Now that we have the prerequisites, let's drill down to business.
 
@@ -63,8 +63,8 @@ knowledge in Scratch.
 
 ![The Foundations](/img/foundations.webp)
 
-IMO, foundations are just 3. The control structures and primal data structures.
-The control Structures are as such:
+IMO, foundations are just 2: The control structures and primal data structures.
+The control Structures are:
 
 - Sequencial
 - Conditional
@@ -222,18 +222,18 @@ that lays the groundwork for all the softwares ever witten (probably).
 
 ![The Von Neumann Arch *graphic from Wikipedia*](/img/vonneumann.svg)
 
-Now our focus is in *Input* and *Output* devices. Well know way of output to
+Now our focus is in *Input* and *Output* devices. Well known way of output to
 stdout is by `console.log` in JS. This function is found both in browser
 environment and nodejs. Try it for yourself.
 
-Write the program
+Write the program...
 
 ```js
 console.log("Hello!"); // feel free to change the prompt!
 console.log("Goodbye!"); // feel free to change the prompt!
 ```
 
-Now execute the script with nodejs and see for yourself that an output is
+...now execute the script with nodejs and see for yourself that an output is
 given in the stdout (mostly your terminal window). This is (somewhat)analogous
 to following Scratch script.
 
@@ -241,7 +241,7 @@ to following Scratch script.
 
 OK, but how do we take an input to the program, if the environment is nodejs?
 
-To keep things nice and tidy, let's qorry about commandline arguments. We will
+To keep things nice and tidy, let's use commandline arguments. We will
 cover the stdin when we are done with **async/await**. Commandline arguments are
 just the strings you passed into terminal when invoking a command. In nodejs,
 we can access this vector using `process.argv` object. So when executing a
@@ -295,7 +295,7 @@ the final artefact and assign it to the `myMod` at runtime.
 ## Wrap up
 
 We are not done yet. But contiguous theory will bore you to death; rest will
-be continued later on. For now, let's just make a
+be continued later on. For now, let's build a
 [dead-simple scientific calculator](/blog/sci-calc-1)
 with what we have learned so far.
 

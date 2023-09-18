@@ -18,8 +18,8 @@ const { title, desc, ogimage = "/opengraph.png" } = Astro.props;
 const resolvedOGImage = checkImageUrl(ogimage, Astro.site);
 
 const makeTitle = title
-  ? title + " | " + "Birnadin Erick"
-  : "Enigma Bits by Birnadin Erick";
+  ? title + " | " + "SPC Media Unit"
+  : "SPCMU WEBBOOTCAMP";
 ---
 
 <!DOCTYPE html>
@@ -31,7 +31,7 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={makeTitle}
-      description="A Bootcamp by Birnadin Erick(me$birn.cc) to introduce disciples in simple frontend-heavy webapps to pupil who are familiar with Scratch programming methodologies."
+      description="A Bootcamp by SPCMU to introduce disciples in simple frontend-heavy webapps to pupil who are familiar with Scratch programming methodologies."
       canonical={canonicalURL}
       twitter={{
         creator: "@BirnadinErick",
@@ -42,11 +42,11 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: "Enigma Bits | Birnadin Erick",
+          title: "SPCMU WEBBOOTCAMP | BE + SPCMU ",
           image: resolvedOGImage,
         },
         image: {
-          alt: "Enigma Bits by Birnadin Erick",
+          alt: "Fide et Labore",
         },
       }}
     />
